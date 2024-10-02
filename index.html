@@ -219,16 +219,19 @@
 
       </div>  
 
-      <div class="input-group">  
-        <label for="code-input">Enter code:</label>  
-        <input type="text" id="code-input" placeholder="Enter the code">  
-        <button onclick="verifyCode()">Submit</button>  
-      </div>  
-  
-      <div id="link-container">  
-          <p>欢迎来到，飞跃计划:</p>  
-          <a href="./飞跃计划主页.html" target="_blank">进入主页</a>  
-      </div>  
+      <hr>
+
+      <div class="input-group" style="display: none;">    
+        <label for="code-input"> 识别代码： </label>    
+        <input type="text" id="code-input" placeholder="请输入代码">    
+        <button onclick="verifyCode()">Submit</button>    
+      </div>    
+        
+      <div id="link-container" style="display: none;">    
+        <p>欢迎来到，飞跃计划:</p>    
+        <!--  好吧，我就知道肯定会有人F12审查代码查看隐藏链接，不过本身主页里也没啥特殊的 -->
+        <a href="./飞跃计划主页.html" target="_blank">进入主页</a>    
+      </div>
       
 
       <p>

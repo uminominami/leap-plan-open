@@ -40,3 +40,25 @@ function verifyCode() {
       alert('Incorrect code. Please try again.');  
   }  
 }
+
+
+let rightClickCount = 0;  
+const inputGroup = document.querySelector('.input-group');  
+const linkContainer = document.getElementById('link-container');  
+  
+document.addEventListener('contextmenu', (event) => {  
+    //event.preventDefault(); // 阻止默认的右键菜单  
+    rightClickCount++;  
+  
+    if (rightClickCount === 4) {  
+        inputGroup.style.display = 'block';  
+        // linkContainer.style.display = 'block';  
+        // 重置计数器  
+        rightClickCount = 0;  
+    }  
+    // 可以在这里设置一个计时器，如果在一定时间内没有达到三次右键点击，则重置计数器  
+    setTimeout(() => {  
+        rightClickCount = 0;  
+    }, 1000); // 例如2秒内需要完成三次右键点击  
+});  
+  

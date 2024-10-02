@@ -100,7 +100,7 @@ button:hover {
     margin-top: 20px;  
 }  
   
-#link-container {  
-    margin-top: 20px;  
-    display: none; /* 初始隐藏链接容器 */  
+#link-container {    
+    display: none; /* 初始状态为隐藏 */    
+    text-align: center;    
 }
