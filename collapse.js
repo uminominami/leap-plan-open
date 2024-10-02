@@ -27,3 +27,16 @@ function toggleCollapse(id) {
     }, 10); // 允许浏览器渲染变化  
   }  
 }
+
+
+function verifyCode() {  
+  const codeInput = document.getElementById('code-input').value;  
+  const linkContainer = document.getElementById('link-container');  
+    
+  if (codeInput === 'BNUchem') {  
+      linkContainer.style.display = 'block';  
+  } else {  
+      linkContainer.style.display = 'none';  
+      alert('Incorrect code. Please try again.');  
+  }  
+}
